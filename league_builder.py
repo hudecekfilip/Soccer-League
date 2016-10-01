@@ -26,7 +26,8 @@ def players_divide(my_list):
 # creating a letter
 def letter(team_1, team_2, practice):
 	for items in team_1:
-		file = open(items["Name"] + " (" + team_2 + ")" + ".txt", "a")
+		# creating a letter with lowercased names and replacing "space" for "_" between names
+		file = open(items["Name"].lower().replace(" ","_") + ".txt", "a")
 		file.write("Dear "+ items["Guardian Name(s)"] + ", " + "\n" + "\n")
 		file.write("your child " + items["Name"] + " has been placed to the team ")
 		file.write(team_2 + " and you should attend their first team practice, ")
