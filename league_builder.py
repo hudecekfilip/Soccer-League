@@ -13,7 +13,7 @@ raptors_practice = "March 18, 1pm"
 
 # dividing players to the Teams based on the experiences
 def players_divide(my_list):
-	count = 0
+	count = 1
 	for test in my_list:
 		count += 1
 		if count <= 3:
