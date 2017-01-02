@@ -16,7 +16,7 @@ def players_divide(my_list):
 	count = 0
 	for test in my_list:
 		count += 1
-		if count <= 3:
+		if count <= 4:
 			dragons.append(test)
 		elif count <= 6:
 			sharks.append(test)
